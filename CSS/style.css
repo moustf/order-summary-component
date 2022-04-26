@@ -1,0 +1,159 @@
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--paleBlue);
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+.container {
+  max-height: 92vh;
+  margin: 30px auto;
+  padding-bottom: 20px;
+  width: 500px;
+  box-shadow: 3px 3px 3px hsl(223, 47%, 23%, 0.3);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.bg_image {
+  background: url("../images/pattern-background-mobile.svg") no-repeat
+    center/cover;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.illustration {
+  width: 100%;
+  height: 250px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+h1 {
+  color: var(--darkBlue);
+  font-weight: 900;
+  margin: 25px 0 15px 0;
+}
+
+p {
+  color: var(--desaturatedBlue);
+  width: 300px;
+  margin: 15px auto;
+}
+
+.price {
+  background-color: var(--veryPaleBlue);
+  margin: 20px auto;
+  width: 90%;
+  height: 80px;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+article {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.chng {
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  color: blue;
+}
+
+.btn-primary {
+  background-color: var(--brightBlue);
+  color: #ffffff;
+  width: 400px;
+  height: 50px;
+  font-size: 15px;
+}
+
+.btn-primary:hover {
+  opacity: 0.7;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--desaturatedBlue);
+  font-weight: 900;
+  margin: 15px 0 20px 0;
+}
+
+.btn-secondary:hover {
+  color: var(--darkBlue);
+}
+
+/* Attributions */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Desktop Rendering */
+
+@media (min-width: 768px) {
+  .bg_image {
+    background: url("../images/pattern-background-desktop.svg") no-repeat
+      center/cover;
+    height: 50vh;
+  }
+}
