@@ -97,12 +97,20 @@ article {
   justify-content: center;
 }
 
-.pay-plan h4 {
+.pay-plan {
+  text-align: left;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.pay-plan h2 {
   width: 200px;
+  font-size: large;
+  margin-bottom: 0;
 }
 
 .pay-plan p {
   width: 200px;
+  margin-top: 5px;
 }
 
 .buttons {
